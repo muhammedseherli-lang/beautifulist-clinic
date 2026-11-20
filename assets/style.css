@@ -268,3 +268,19 @@ header.site.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.08)}
 @keyframes drift1{to{transform:translate(180px,90px)}}
 @keyframes drift2{to{transform:translate(-160px,-70px)}}
 @keyframes drift3{to{transform:translate(-120px,60px)}}
+
+/* language switch */
+.lang-switch{display:inline-grid;place-items:center;min-width:44px;height:40px;padding:0 .7rem;border:1.5px solid var(--gold);border-radius:999px;color:var(--ink);font-weight:700;text-decoration:none;font-size:.92rem;transition:.2s;font-family:"IBM Plex Sans Arabic",Inter,sans-serif}
+.lang-switch:hover{background:var(--gold);color:#fff}
+@media (max-width:980px){.lang-switch{margin-inline-start:auto}}
+
+/* English / LTR */
+html[lang=en] body{font-family:Inter,system-ui,sans-serif;font-size:16.5px;line-height:1.75}
+html[lang=en] h1,html[lang=en] h2,html[lang=en] h3,html[lang=en] h4,html[lang=en] .card .num,html[lang=en] .tl-day{font-family:"Playfair Display",Georgia,serif}
+html[dir=ltr] .logo-text small{text-align:left}
+html[dir=ltr] th,html[dir=ltr] td{text-align:left}
+html[dir=ltr] .article ul,html[dir=ltr] .article ol{margin:.7rem 0 .7rem 1.4rem}
+html[dir=ltr] .wa-float{left:auto;right:22px}
+nav.main a,.btn,.lang-switch{white-space:nowrap}
+html[lang=en] nav.main ul{gap:1.3rem}
+@media (max-width:1180px) and (min-width:981px){nav.main ul{gap:1rem}nav.main a{font-size:.93rem}.header-cta{padding:.75rem 1.1rem}}
