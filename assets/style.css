@@ -284,3 +284,7 @@ html[dir=ltr] .wa-float{left:auto;right:22px}
 nav.main a,.btn,.lang-switch{white-space:nowrap}
 html[lang=en] nav.main ul{gap:1.3rem}
 @media (max-width:1180px) and (min-width:981px){nav.main ul{gap:1rem}nav.main a{font-size:.93rem}.header-cta{padding:.75rem 1.1rem}}
+.lang-switch{display:inline-flex;align-items:center;gap:.4rem;padding:0 .95rem;background:var(--ink);color:#fff;border-color:var(--ink)}
+.lang-switch svg{color:var(--gold-2)}
+.lang-switch:hover{background:var(--gold);border-color:var(--gold)}
+@media (max-width:620px){.logo-text b{font-size:1.25rem}.logo-text small{letter-spacing:.12em;font-size:.62rem;white-space:nowrap}.lang-switch{padding:0 .7rem;height:36px;font-size:.85rem}}
